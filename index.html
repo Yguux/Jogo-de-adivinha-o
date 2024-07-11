@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <script src="app/app.js" defer></script>
+  <script src="app/WebSpeechAPI.js" defer></script>
+  <script src="app/Validacao.js" defer></script>
+  <title>Adivinhe o número</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="Titulo">Bem vindos ao jogo de adivinhação!</h1>
+    </nav>
+  </header>
+  <aside>
+    <div>
+      <p>Menor número: <span id="primeiro_numero"></span></p>
+      <p>Maior número: <span id="segundo_numero"></span></p>
+    </div>
+  </aside>
+  <main>
+    <h2 class="secreto">Adivinhe o número secreto:</h2>
+    <div id="chute">
+    </div>
+  </main>
+  <footer>
+    <p>desenvolvido por Ygor Kappaun</p>
+  </footer>
+</body>
+</html>

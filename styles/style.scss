@@ -1,0 +1,102 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto minmax(78vh, 1fr) auto; /* Ajuste na altura das linhas */
+    grid-template-areas:
+        'header header header header header'
+        'aside main main main main'
+        'footer footer footer footer footer';
+    gap: 1em;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.acertou{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2em;
+    width: 100%;
+}
+
+header {
+    grid-area: header;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+
+    div {
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        padding: 20px;
+    }
+
+    .secreto{
+        font-size: 3em;
+    }
+
+    #chute{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .disse{
+        font-size: 3em;
+    }
+
+    .box{
+        align-items: center;
+        font-size: 7em;
+    }
+
+    .invalido{
+        color: red;
+        padding-top: 1em;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .img{
+        font-size: 2em;
+    }
+
+    .img img{
+        width: 1em;
+        height: 1em;
+    }
+
+}
+
+footer {
+    grid-area: footer;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
